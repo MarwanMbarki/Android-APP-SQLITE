@@ -23,44 +23,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String COL_5 = "CITY";
     public static final String COL_6 = "PRICE";
     public static final String COL_7 = "LNG";
-    /*
-        public DatabaseHelper(Context context) {
-            super(context, DB_NAME, null, DB_VERSION)        }
-    /*
-        @Override
-        public void onCreate(SQLiteDatabase db) {
-            db.execSQL("CREATE TABLE BED (_id INTEGER PRIMARY KEY AUTOINCREMENT, NAME TEXT, DESCRIPTION TEXT, TYPE TEXT, CITY TEXT, PRICE TEXT ,LNG TEXT)");
-            insertPlace(db, "Princes Street Suites", "With stylish décor and free Wi-Fi available throughout", "Appartment", "Edinburgh", "169","01383112233");
-            insertPlace(db, "Staycity Aparthotels West End", "Staycity Aparthotels West End are situated 0.5 miles from Edinburgh Haymarket Rail Station.", "Appartment","Edinburgh", "135","01383112244");
-            insertPlace(db, "Blackfriars Lofts", "Stay in the historical Old Town of Edinburgh", "Appartment", "Edinburgh", "160","01383112255");
-            insertPlace(db, "Old Town Chambers", "Experience world-class service at Old Town Chambers", "Appartment", "Edinburgh", "150","01383112266");
-            insertPlace(db, "Bryson Road Edinburgh Apartment", "Set 0.7 miles from Murrayfield Stadium in Edinburgh", "Appartment","Edinburgh", "135", "01383112277");
-            insertPlace(db, "Fountain Court Apartments – Stewart", "Set in the heart of historic Edinburgh just 10 minutes’ walk from The Royal Mile", "Appartment", "Edinburgh", "140","501383112288");
-        }
-
-    @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("DROP TABLE IF EXISTS "+ TABLE_NAME);
-        onCreate(db);
-    }
-
-    private static void insertPlace(SQLiteDatabase db, String name, String description, String type, String city, String price, String lng){
-        ContentValues placeValues = new ContentValues();
-        placeValues.put("NAME", name);
-        placeValues.put("DESCRIPTION", description);
-        placeValues.put("TYPE", type);
-        placeValues.put("CITY", city);
-        placeValues.put("PRICE", price);
-        placeValues.put("LNG", lng);
-        db.insert("BED", null, placeValues);
-
-    }
-
-
-    */
+    
     public DatabaseHelper(Context context){
         super(context, DB_NAME, null, DB_VERSION);
-        //SQLiteDatabase db = this.getWritableDatabase();
     }
 
     @Override
@@ -84,7 +49,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         placeValues.put(COL_5, city);
         placeValues.put(COL_6, price);
         placeValues.put(COL_7, lng);
-        //db.insert("BED", null, placeValues);
 
         long result = db.insert(TABLE_NAME,null,placeValues);
         if(result == -1){
