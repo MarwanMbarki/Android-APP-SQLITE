@@ -13,7 +13,7 @@ import android.os.Build;
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static final String DB_NAME = "bb";
-    private static final int DB_VERSION = 9;
+    private static final int DB_VERSION = 1;
     private static final String TABLE_NAME = "bed";
 
     public static final String COL_1 = "ID";
