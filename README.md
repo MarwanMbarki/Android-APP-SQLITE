@@ -1,2 +1,3 @@
 # Android App BB - Hotel.
-    Simple android App tutorial to fetch the data from SQLite to ListView
+    Simple android App tutorial to insert and fetch data from SQLite to ListView.
+    
