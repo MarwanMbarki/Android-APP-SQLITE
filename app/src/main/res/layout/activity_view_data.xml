@@ -12,11 +12,7 @@
     tools:context="com.example.marwan.hotel.ViewData">
 
 <!--
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Data"
-        android:id="@+id/dataType"/>
+    ListView - Where the data will populated from the Sqlite
 -->
     <ListView
         android:layout_width="match_parent"
