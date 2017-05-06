@@ -14,7 +14,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static final String DB_NAME = "bb";
     private static final int DB_VERSION = 1;
-    private static final String TABLE_NAME = "bed";
+    private static final String TABLE_NAME = "booking";
 
     public static final String COL_1 = "ID";
     public static final String COL_2 = "NAME";
