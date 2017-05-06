@@ -32,8 +32,6 @@ public class ViewData extends AppCompatActivity {
 
         Intent intent = getIntent();
         String message = intent.getStringExtra(EXTRA_MESSAGE);
-        //TextView dataType =(TextView)findViewById(R.id.dataType) ;
-        //dataType.setText(message);
 
 
         dataList = (ListView) findViewById(R.id.dataList);
@@ -43,7 +41,7 @@ public class ViewData extends AppCompatActivity {
             SQLiteOpenHelper databaseHelper = new DatabaseHelper(this);
             db = databaseHelper.getReadableDatabase();
 
-            cursor = db.rawQuery("SELECT * FROM bed WHERE TYPE='" + message + "'", null);
+            cursor = db.rawQuery("SELECT * FROM booking WHERE TYPE='" + message + "'", null);
 
 
             while(cursor.isAfterLast() == false){
