@@ -40,7 +40,7 @@ public class ViewData extends AppCompatActivity {
 
             SQLiteOpenHelper databaseHelper = new DatabaseHelper(this);
             db = databaseHelper.getReadableDatabase();
-
+            <!-- Fetch all the data record from the database -->
             cursor = db.rawQuery("SELECT * FROM booking WHERE TYPE='" + message + "'", null);
 
 
