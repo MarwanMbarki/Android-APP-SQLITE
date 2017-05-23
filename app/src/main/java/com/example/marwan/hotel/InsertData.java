@@ -29,7 +29,7 @@ public class InsertData extends AppCompatActivity {
 
         AddData();
     }
-
+//Set Onclick to insert the data to database
     public void AddData(){
         btnAdd.setOnClickListener(
                 new View.OnClickListener(){
