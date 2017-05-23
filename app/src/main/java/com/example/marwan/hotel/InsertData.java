@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class InsertData extends AppCompatActivity {
-
+//Declare the Variables
     DatabaseHelper mydb;
     EditText editName, editDescr, editType, editCity, editPrice, editLng;
     Button btnAdd;
