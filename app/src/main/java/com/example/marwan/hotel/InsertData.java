@@ -43,7 +43,7 @@ public class InsertData extends AppCompatActivity {
                                 editPrice.getText().toString(),
                                 editLng.getText().toString());
 
-
+                        //If Succeed, Display This message
                         if(isInserted = true){
                             Toast.makeText(InsertData.this,"Data Inserted", Toast.LENGTH_LONG).show();
                         }else{
