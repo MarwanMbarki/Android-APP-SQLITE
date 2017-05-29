@@ -27,7 +27,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public DatabaseHelper(Context context){
         super(context, DB_NAME, null, DB_VERSION);
     }
-
+    /*  Create The Table */
     @Override
     public  void onCreate(SQLiteDatabase db){
         db.execSQL("create table " + TABLE_NAME +"(ID INTEGER PRIMARY KEY AUTOINCREMENT, NAME TEXT, DESCRIPTION TEXT, TYPE TEXT, CITY TEXT, PRICE TEXT, LNG TEXT)");
