@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/dataList"
         android:textStyle="bold"
-        android:textSize="24dp"
+        android:textSize="25dp"
         android:textColor="@color/colorAccent">
     </ListView>
 
