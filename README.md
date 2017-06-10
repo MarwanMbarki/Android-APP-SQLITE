@@ -1,7 +1,8 @@
 # Android App - Hotel - B&B.
 
     Simple android App tutorial to insert and fetch data from SQLite to ListView.
-    ---------------------------------------------
+    -----------------------------------------------------------------------------
+    -----------------------------------------------------------------------------
     
     * Insert Data to Sqlite.
     * Retreive Data in Listview.
